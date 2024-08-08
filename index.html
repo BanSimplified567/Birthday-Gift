@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap"
+         rel="stylesheet"
+      />
+      <title>Birthday Gift Site</title>
+   </head>
+   <body>
+      <div class="form-container">
+         <form id="birthdayForm">
+            <h1>Happy Birthday This Gift Is For You 🤭😚</h1>
+            <div class="form-group">
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+               <label for="age">Age:</label>
+               <input type="number" id="age" name="age" required />
+            </div>
+            <div class="form-group">
+               <label for="dob">Date of Birth:</label>
+               <input type="date" id="dob" name="dob" required />
+            </div>
+            <div class="form-group">
+               <label for="picture">Upload Picture:</label>
+               <input type="file" id="picture" name="picture" accept="image/*" required />
+            </div>
+            <button class="buttonSubmit" type="button" onclick="displayBirthday()">Submit</button>
+         </form>
+      </div>
+
+      <div class="header" id="birthdayHeader" style="display: none">
+         <h1 id="birthdayName"></h1>
+         <img id="birthdayImage" src="" alt="Birthday Image" class="avatar" />
+         <h2 class="age" id="birthdayAge"></h2>
+         <h4 class="date" id="birthdayDate"></h4>
+      </div>
+
+      <!-- gift sections -->
+      <div class="gift-section" style="display: none">
+         <h2 class="gift-title">Here's how happy I am for you today 🥳</h2>
+         <h3 class="gift-hint">(Hover over the gift)</h3>
+         <div class="happy-gif gift-cover"></div>
+      </div>
+
+      <div class="gift-section" style="display: none">
+         <h2 class="gift-title">How people react when you enter the room 😍</h2>
+         <div class="respect-gif gift-cover"></div>
+      </div>
+
+      <div class="gift-section" style="display: none">
+         <h2 class="gift-title">If I had to describe you with ONE word 👇</h2>
+         <div class="genius-gif gift-cover"></div>
+      </div>
+
+      <div class="gift-section" style="display: none">
+         <h2 class="gift-title">The only person as badass as you 💪</h2>
+         <div class="goat-gif gift-cover"></div>
+      </div>
+
+      <div class="gift-section" style="display: none">
+         <h2 class="gift-title">This one's for you, my friend 👊</h2>
+         <div class="cheers-gif gift-cover"></div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer" style="display: none">
+         <p>
+            created by
+            <a href="https://github.com/najibdevs/birthday-gift" target="_blank">BanBan</a>
+         </p>
+      </div>
+
+      <audio id="birthdayAudio" src="./happybirthday.mp3" preload="auto"></audio>
+
+      <script src="./script.js"></script>
+   </body>
+</html>

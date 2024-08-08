@@ -1,0 +1,158 @@
+/* global styles */
+body {
+  text-align: center;
+  font-family: "Happy Monkey", system-ui;
+  background: linear-gradient(#ab0c0ccc, rgba(0, 0, 0, 0.855));
+  color: white;
+}
+
+/* grouped styles */
+h1,
+h2,
+h3,
+h4,
+p {
+  text-shadow: 0px 0px 1px black;
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Ensures the form is vertically centered */
+}
+
+form {
+  background: rgba(255, 255, 255, 0.1);
+  /* Slight background for visibility */
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  width: 100%;
+}
+
+#birthdayForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 1rem;
+  object-fit: contain;
+  height: 2rem;
+}
+
+.buttonSubmit {
+  padding: 1rem 4rem;
+  border-radius: 50px;
+  color: #fefefe;
+  background: linear-gradient(#ab0c0ccc, rgba(0, 0, 0, 0.855));
+}
+
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 20rem;
+  aspect-ratio: 2/2;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid black;
+}
+
+.age,
+.date {
+  background: #6f0505cc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.age {
+  margin: 5px 0 10px;
+}
+
+.date {
+  margin: 0;
+}
+
+/* gift section */
+.gift-section {
+  margin-top: 50px;
+}
+
+.gift-title {
+  margin-bottom: 10px;
+}
+
+.gift-hint {
+  margin-top: 0;
+}
+
+.gift-cover {
+  width: 500px;
+  height: 400px;
+  background: url(images/gift-cover.avif);
+  margin: 0 auto;
+  border: 6px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.happy-gif:hover {
+  background: url(images/OtherYou.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.respect-gif:hover {
+  background: url(images/respect.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.genius-gif:hover {
+  background: url(images/You.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.goat-gif:hover {
+  background: url(images/darkness.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.cheers-gif {
+  height: 300px;
+  background-size: cover;
+}
+
+.cheers-gif:hover {
+  background: url(images/cheers.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+/* footer */
+.footer {
+  margin-top: 30px;
+}
+
+.footer a {
+  color: white;
+}
